@@ -27,7 +27,7 @@ public class MashineDataRepository : IMashineDataRepository
                     cmd.Parameters.AddWithValue(sensorData.sensorName, sensorData.sensorValue);
                 }
                 cmd.ExecuteNonQuery();
-           }
+            }
         }
 
     }
