@@ -6,7 +6,8 @@ namespace FifthSense
     {
         static void Main(string[] args)
         {
-            var receiver = new MessageReceiver(new MashineDataRepository("bla"));
+            var connString = "Host=localhost;Username=tes1t;Password=test;Database=FifthSense";
+            var receiver = new MessageReceiver(new MashineDataRepository(connString));
             var message = "{\"timestamp\":1545581650234," +
             "\"type\":\"SensorData\"," +
             "\"id\":\"7e8b93c3-44bb-425f-a8d8-f48bb8e58365\"," +
