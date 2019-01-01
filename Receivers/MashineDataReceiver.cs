@@ -1,10 +1,10 @@
-using System.Linq;
+﻿using System.Linq;
 using Newtonsoft.Json;
 
-public class MessageReceiver
+public class MashineDataReceiver : IMashineDataReceiver
 {
     private readonly IMashineDataRepository repository;
-    public MessageReceiver(IMashineDataRepository repository)
+    public MashineDataReceiver(IMashineDataRepository repository)
     {
         this.repository = repository;
     }
