@@ -12,4 +12,6 @@ pool:
 steps:
 - script: dotnet build
   displayName: 'Build this shit'
+- script: dotnet test
+  displayName: 'Test this shit'
 
