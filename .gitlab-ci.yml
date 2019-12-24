@@ -1,0 +1,9 @@
+image: "mcr.microsoft.com/dotnet/core/sdk:2.2"
+
+build:
+    script:
+        - dotnet build
+
+test:
+    script:
+        - dotnet test
